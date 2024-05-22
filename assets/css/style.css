@@ -1,0 +1,220 @@
+:root {
+    --normal: #A9A878;
+    --bug: #A8B821;
+    --fighting: #C42D2F;
+    --ghost: #715899;
+    --electr: #F9D032;
+    --flying: #9F8FCC;
+    --steel: #B8B8D0;
+    --psychc: #F9578B;
+    --poison: #9F3FA0;
+    --fire: #F07F2F;
+    --ice: #98D8D8;
+    --ground: #DFC06E;
+    --water: #8AA5EB;
+    --dragon: #7138F7;
+    --rock: #B89F38;
+    --grass: #7AC650;
+    --dark: #6F5848;
+    --fairy:#ee8dac;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F6F8FC;
+}
+.text-center{
+    text-align: center;
+}
+
+.btn-viewMore{
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: #f85252;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 1px solid #f03c3c;
+    position: relative;
+    box-shadow: #f32a2a 0px 5px 0px;
+}
+
+.btn-viewMore:active{
+    top:3px;
+    background-color: #f32a2a;
+}
+
+.content {
+    padding: 1rem;
+    height: 100vh;
+    ;
+    background: #FFFFFF;
+    border-radius: 2rem;
+    min-width: 200px;
+}
+
+.pokeList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.types {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.type{
+        background-color: var(--normal);
+        border-radius: 1rem;
+        margin: 0.3rem 0;
+        padding: .25rem .5rem;
+        font-size: 0.7rem;
+        text-align: center;
+        filter:drop-shadow(0px 2px 2px black)
+}
+
+.pokemon {
+    padding: 1rem;
+    background: #46D1B1;
+    border-radius: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    filter:drop-shadow(1px 1px 2px black);
+
+    #numberPoke {
+        color: rgba(32, 24, 24, 0.466);
+        text-align: right;
+    }
+
+    .namePoke {
+        font-weight: bold;
+        margin: .25rem 0;
+        font-size: .9rem;
+        text-transform: capitalize;
+    }
+
+    .containerFeature {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+
+        img {
+            max-width: 100%;
+            height: 4.25rem;
+            filter: drop-shadow(1px 1px 2px black);
+            aspect-ratio: 1/1;
+        }
+    }
+   
+}
+
+@media(width<=380px) {
+    .pokeList {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(width>=576px) {
+    .pokeList {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(width>=992px) {
+    .content {
+        max-width: 992px;
+        margin: 2rem auto;
+        height: auto;
+    }
+
+    .pokeList {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.normal {
+    background-color: var(--normal);
+}
+
+.bug {
+    background-color: var(--bug);
+}
+
+.fight {
+    background-color: var(--fight);
+}
+
+.ghost {
+    background-color: var(--ghost);
+}
+
+.electric {
+    background-color: var(--electr);
+}
+
+.flying {
+    background-color: var(--flying);
+}
+
+.steel {
+    background-color: var(--steel);
+}
+
+.psychic {
+    background-color: var(--psychc);
+}
+
+.poison {
+    background-color: var(--poison);
+}
+
+.fire {
+    background-color: var(--fire);
+}
+
+.ice {
+    background-color: var(--ice);
+}
+
+.ground {
+    background-color: var(--ground);
+}
+
+.water {
+    background-color: var(--water);
+}
+
+.dragon {
+    background-color: var(--dragon);
+}
+
+.rock {
+    background-color: var(--rock);
+}
+
+.grass {
+    background-color: var(--grass);
+}
+
+.dark {
+    background-color: var(--dark);
+}
+
+.fighting{
+    background-color: var(--fighting);
+}
+.fairy{
+    background-color: var(--fairy);
+}
